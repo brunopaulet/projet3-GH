@@ -1,0 +1,656 @@
+/* Webfont: Lato-Regular */
+$BackGround:#579C87;
+$ForeGround:#FDCB46;
+
+@font-face {
+    font-family: 'LatoWeb';
+    src: url('../fonts/Lato-Regular.eot');
+    /* IE9 Compat Modes */
+    src: url('../fonts/Lato-Regular.eot?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('../fonts/Lato-Regular.woff2') format('woff2'),
+        /* Modern Browsers */
+        url('../fonts/Lato-Regular.woff') format('woff'),
+        /* Modern Browsers */
+        url('../fonts/Lato-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+    //text-rendering: auto;
+}
+
+/* leckerli-one-regular - latin */
+@font-face {
+    font-family: 'Leckerli One';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/leckerli-one-v10-latin-regular.eot');
+    /* IE9 Compat Modes */
+    src: local('Leckerli One'), local('LeckerliOne-Regular'),
+        url('../fonts/leckerli-one-v10-latin-regular.eot?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('../fonts/leckerli-one-v10-latin-regular.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('../fonts/leckerli-one-v10-latin-regular.woff') format('woff'),
+        /* Modern Browsers */
+        url('../fonts/leckerli-one-v10-latin-regular.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../fonts/leckerli-one-v10-latin-regular.svg#LeckerliOne') format('svg');
+    /* Legacy iOS */
+}
+
+/* kalam-regular - latin */
+@font-face {
+    font-family: 'Kalam';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/kalam-v10-latin-regular.eot');
+    /* IE9 Compat Modes */
+    src: local('Kalam'), local('Kalam-Regular'),
+        url('../fonts/kalam-v10-latin-regular.eot?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('../fonts/kalam-v10-latin-regular.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('../fonts/kalam-v10-latin-regular.woff') format('woff'),
+        /* Modern Browsers */
+        url('../fonts/kalam-v10-latin-regular.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../fonts/kalam-v10-latin-regular.svg#Kalam') format('svg');
+    /* Legacy iOS */
+}
+
+/* volkhov-regular - latin */
+@font-face {
+    font-family: 'Volkhov';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/volkhov-v11-latin-regular.eot');
+    /* IE9 Compat Modes */
+    src: local('Volkhov Regular'), local('Volkhov-Regular'),
+        url('../fonts/volkhov-v11-latin-regular.eot?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('../fonts/volkhov-v11-latin-regular.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('../fonts/volkhov-v11-latin-regular.woff') format('woff'),
+        /* Modern Browsers */
+        url('../fonts/volkhov-v11-latin-regular.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../fonts/volkhov-v11-latin-regular.svg#Volkhov') format('svg');
+    /* Legacy iOS */
+}
+
+/* gochi-hand-regular - latin */
+@font-face {
+    font-family: 'Gochi Hand';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/gochi-hand-v10-latin-regular.eot');
+    /* IE9 Compat Modes */
+    src: local('Gochi Hand'), local('GochiHand-Regular'),
+        url('../fonts/gochi-hand-v10-latin-regular.eot?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('../fonts/gochi-hand-v10-latin-regular.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('../fonts/gochi-hand-v10-latin-regular.woff') format('woff'),
+        /* Modern Browsers */
+        url('../fonts/gochi-hand-v10-latin-regular.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../fonts/gochi-hand-v10-latin-regular.svg#GochiHand') format('svg');
+    /* Legacy iOS */
+}
+
+$BackgroundColor:#F9A825;
+
+html {
+    font-family: LatoWeb;
+
+    @media screen and (orientation: portrait) {
+        font-size: 40px;
+    }
+}
+
+// test
+body {
+    width: 1000px;
+    margin: auto;
+}
+
+header {
+    img {
+        width: 1000px;
+    }
+}
+
+section {
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    @media screen and (orientation: portrait) {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: unset;
+        justify-content: center;
+        width: 80%;
+        padding-right: 80px;
+        padding-left: 80px;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    div {
+        margin: 30px;
+        width: 400px;
+        height: 570px;
+        opacity: 0.4;
+        box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+        transform: scale(1);
+        transition-property: opacity, transform;
+        transition-duration: 1s, 1s;
+        transition-timing-function: ease-in-out;
+
+        @media screen and (orientation: portrait) {
+            border: 1px solid silver;
+            width: 100%;
+            opacity: 1;
+            padding-bottom: 100px;
+        }
+
+        &:hover {
+            transform: scale(1.15);
+            opacity: 1;
+            z-index: 999;
+
+        }
+
+        span {
+            display: block;
+            position: fixed;
+            top: 150px;
+            width: 100%;
+
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    .MenuCover1 {
+        font-family: 'Kalam';
+        background-color: #FFECB3;
+        color: #6D4C41;
+
+        span {
+            top: 100px;
+        }
+
+        img {
+            width: 40px;
+
+            @media screen and (orientation: portrait) {
+                width: 80px;
+            }
+        }
+    }
+
+    .MenuCover2 {
+        color: #C67412;
+        background-color: #FFF5FE;
+        font-family: 'Volkhov';
+    }
+
+    .MenuCover3 {
+        color: #0887FB;
+        background-color: #EFEBE9;
+        font-family: 'Leckerli One';
+
+    }
+
+    .MenuCover4 {
+        color: #72BF56;
+        background-color: #FDFFFD;
+        font-family: 'Gochi Hand';
+    }
+
+}
+
+
+
+footer {
+    width: 1000px;
+    background-color: $BackGround;
+    color: $ForeGround;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 0%;
+
+    div {
+        padding: 10px;
+
+        &:hover {
+            animation: wiggle 1s infinite;
+        }
+
+        a {
+            text-decoration: unset;
+            color: $ForeGround;
+        }
+    }
+}
+
+@keyframes wiggle {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    80% {
+        transform: rotate(0deg);
+    }
+
+    85% {
+        transform: rotate(5deg);
+    }
+
+    95% {
+        transform: rotate(-5deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+aside {
+    background-color: $BackGround;
+    color: $ForeGround;
+    padding-top: 10px;
+    //padding-bottom: 10px;
+    text-align: center;
+    width: 500px;
+    @media screen and (orientation: portrait) {
+        width:700px;
+    }
+    margin: auto;
+    font-size: 30px;
+    border-radius: 8px;
+    margin-top: 50px;
+    margin-bottom: 200px;
+
+    span {
+        height: 100%;
+        display: inline-block;
+        margin: 0;
+        overflow: hidden;
+        padding: 0;
+        height: 40px;
+        @media screen and (orientation: portrait) {
+            height: 76px;
+            font-size:1.5rem;
+        }
+    }
+
+    .container {
+        width: 250px;
+        text-align: left;
+       
+    }
+
+    .typewriter {
+        width: 0px;
+        //border:1px solid black;
+        white-space: nowrap;
+        letter-spacing: .15em;
+
+        /* Adjust as needed */
+        animation: typing 3.5s steps(100, end) infinite;
+        //display:none;
+    }
+}
+
+.DisplayMenu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 100px;
+
+    div {
+        width: 90%;
+        padding-bottom: 80px;
+        text-align: center;
+
+        h1 {
+            font-size: 3.0rem;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+
+            img {
+                width: 250px;
+                padding-left: 40px;
+                padding-right: 40px;
+            }
+
+            margin-bottom: 0px;
+
+            span {
+                width: 209px;
+                display: inline-block;
+
+                &:hover:after {
+
+                    width: 100%;
+                    visibility: visible;
+
+                }
+
+                &::after {
+                    content: '';
+                    background-color: #6D4C41;
+                    visibility: hidden;
+                    width: 0;
+                    height: 3px;
+                    transition: 1s;
+                    display: block;
+                }
+            }
+
+        }
+
+        p {
+            margin: auto;
+            width: 85%;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+            font-size: 1.2rem;
+
+            span {
+                text-align: left;
+                display: inline-block;
+            }
+
+            @media screen and (orientation: portrait) {
+                position: relative;
+                margin-bottom: 30px;
+            }
+        }
+    }
+
+    .Price {
+        @media screen and (orientation: portrait) {
+            position: absolute;
+            top:0;
+            right: 0;
+        }
+    }
+
+    .MenuLine {
+        @media screen and (orientation: portrait) {
+            width: 80%;
+        }
+    }
+}
+
+.DisplayMenu1 {
+    div {
+        font-family: 'Kalam';
+        background-color: #FFECB3;
+        color: #6D4C41;
+
+        h2 {
+            img {
+                width: 250px;
+                padding-left: 40px;
+                padding-right: 40px;
+            }
+        }
+
+        img {
+            margin-top: 30px;
+            width: 130px;
+        }
+
+    }
+
+    .LogoFooter {
+        margin-top: 60px;
+        font-size: 1.8rem;
+        font-weight: bold;
+
+        img {
+            margin-right: 10px;
+            width: 25px;
+            @media screen and (orientation: portrait) {
+                width: 70px;
+                margin-right: 20px;
+            }
+        }
+    }
+}
+
+.DisplayMenu2 {
+    div {
+
+        background-color: #FFF5FE;
+        font-family: 'Volkhov';
+
+        h1 {
+            font-size: 2rem;
+            margin-top: 150px;
+            margin-bottom: 150px;
+        }
+
+        div {
+            width: 100%;
+
+            h2 {
+                font-size: 1.2rem;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 42px;
+
+                @media screen and (orientation: portrait) {
+                    font-size: 1rem;
+                }
+
+                span {
+                    width: unset;
+                }
+
+                img {
+                    width: 250px;
+                    padding-left: 40px;
+                    padding-right: 40px;
+                }
+            }
+
+            p {
+                width: 70%;
+                font-size: 0.9rem;
+            }
+
+        }
+
+        .Rub1 {
+            color: #C67412;
+
+            span {
+                &::after {
+                    background-color: #C67412;
+                }
+            }
+        }
+
+        .Rub2 {
+            color: #A56799;
+
+            span {
+                &::after {
+                    background-color: #A56799;
+                }
+            }
+        }
+
+        .Rub3 {
+            color: #6E4CCC;
+
+            span {
+                &::after {
+                    background-color: #6E4CCC;
+                }
+            }
+        }
+    }
+}
+
+.DisplayMenu3 {
+    div {
+        color: black;
+        background-color: #EFEBE9;
+        font-family: 'Leckerli One';
+
+        div {
+            width: 100%;
+
+            h2 {
+                font-size: 1.3rem;
+                width: 100%;
+                font-weight: normal;
+                margin-bottom: 40px;
+
+                @media screen and (orientation: portrait) {
+                    font-size: 1.2rem;
+                }
+
+                img {
+                    width: 250px;
+                    padding-left: 40px;
+                    padding-right: 40px;
+
+                    @media screen and (orientation: portrait) {
+                        width: 230px;
+                    }
+                }
+
+                span {
+                    &::after {
+                        background-color: black;
+                    }
+                }
+            }
+
+            p {
+                width: 70%;
+
+                @media screen and (orientation: portrait) {
+                    font-size: 1rem;
+                    width: 90%;
+                }
+            }
+
+            img {
+                margin-top: 30px;
+                width: 130px;
+            }
+        }
+
+    }
+}
+
+.DisplayMenu4 {
+    div {
+        color: black;
+        background-color: #EFEBE9;
+        font-family: 'Leckerli One';
+
+        div {
+            width: 100%;
+
+            h2 {
+                font-size: 1.3rem;
+                width: 100%;
+                font-weight: normal;
+                margin-bottom: 40px;
+
+                img {
+                    width: 250px;
+                    padding-left: 40px;
+                    padding-right: 40px;
+                    @media screen and (orientation: portrait) {
+                        width:200px;
+                    }
+                }
+
+                span {
+                    &::after {
+                        background-color: black;
+                    }
+                }
+            }
+
+            p {
+                width: 70%;
+                font-size: 1rem;
+            }
+
+            img {
+                margin-top: 30px;
+                width: 130px;
+            }
+        }
+
+    }
+}
+
+/* The typing effect */
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 250px;
+    }
+}
+
+.Gradient2 {
+    background: -webkit-linear-gradient(0deg, #cc6410 0% 30%, #a45be9, blue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.Gradient3 {
+    background: -webkit-linear-gradient(0deg, #023BE3, #00FFFF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.Gradient4 {
+    background: -webkit-linear-gradient(0deg, #3E923A, white);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.MentionsLegales {
+    width: 80%;
+    margin: auto;
+}

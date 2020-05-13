@@ -1,0 +1,592 @@
+/* Webfont: Lato-Regular */
+@font-face {
+  font-family: 'LatoWeb';
+  src: url("../fonts/Lato-Regular.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/Lato-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato-Regular.woff2") format("woff2"), url("../fonts/Lato-Regular.woff") format("woff"), url("../fonts/Lato-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+/* leckerli-one-regular - latin */
+@font-face {
+  font-family: 'Leckerli One';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/leckerli-one-v10-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: local("Leckerli One"), local("LeckerliOne-Regular"), url("../fonts/leckerli-one-v10-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/leckerli-one-v10-latin-regular.woff2") format("woff2"), url("../fonts/leckerli-one-v10-latin-regular.woff") format("woff"), url("../fonts/leckerli-one-v10-latin-regular.ttf") format("truetype"), url("../fonts/leckerli-one-v10-latin-regular.svg#LeckerliOne") format("svg");
+  /* Legacy iOS */
+}
+
+/* kalam-regular - latin */
+@font-face {
+  font-family: 'Kalam';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/kalam-v10-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: local("Kalam"), local("Kalam-Regular"), url("../fonts/kalam-v10-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/kalam-v10-latin-regular.woff2") format("woff2"), url("../fonts/kalam-v10-latin-regular.woff") format("woff"), url("../fonts/kalam-v10-latin-regular.ttf") format("truetype"), url("../fonts/kalam-v10-latin-regular.svg#Kalam") format("svg");
+  /* Legacy iOS */
+}
+
+/* volkhov-regular - latin */
+@font-face {
+  font-family: 'Volkhov';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/volkhov-v11-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: local("Volkhov Regular"), local("Volkhov-Regular"), url("../fonts/volkhov-v11-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/volkhov-v11-latin-regular.woff2") format("woff2"), url("../fonts/volkhov-v11-latin-regular.woff") format("woff"), url("../fonts/volkhov-v11-latin-regular.ttf") format("truetype"), url("../fonts/volkhov-v11-latin-regular.svg#Volkhov") format("svg");
+  /* Legacy iOS */
+}
+
+/* gochi-hand-regular - latin */
+@font-face {
+  font-family: 'Gochi Hand';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/gochi-hand-v10-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: local("Gochi Hand"), local("GochiHand-Regular"), url("../fonts/gochi-hand-v10-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/gochi-hand-v10-latin-regular.woff2") format("woff2"), url("../fonts/gochi-hand-v10-latin-regular.woff") format("woff"), url("../fonts/gochi-hand-v10-latin-regular.ttf") format("truetype"), url("../fonts/gochi-hand-v10-latin-regular.svg#GochiHand") format("svg");
+  /* Legacy iOS */
+}
+
+html {
+  font-family: LatoWeb;
+}
+
+@media screen and (orientation: portrait) {
+  html {
+    font-size: 40px;
+  }
+}
+
+body {
+  width: 1000px;
+  margin: auto;
+}
+
+header img {
+  width: 1000px;
+}
+
+section {
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+@media screen and (orientation: portrait) {
+  section {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: unset;
+    justify-content: center;
+    width: 80%;
+    padding-right: 80px;
+    padding-left: 80px;
+  }
+}
+
+section a {
+  text-decoration: none;
+}
+
+section div {
+  margin: 30px;
+  width: 400px;
+  height: 570px;
+  opacity: 0.4;
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+  transform: scale(1);
+  transition-property: opacity, transform;
+  transition-duration: 1s, 1s;
+  transition-timing-function: ease-in-out;
+}
+
+@media screen and (orientation: portrait) {
+  section div {
+    border: 1px solid silver;
+    width: 100%;
+    opacity: 1;
+    padding-bottom: 100px;
+  }
+}
+
+section div:hover {
+  transform: scale(1.15);
+  opacity: 1;
+  z-index: 999;
+}
+
+section div span {
+  display: block;
+  position: fixed;
+  top: 150px;
+  width: 100%;
+}
+
+section div span h1 {
+  font-size: 2.5rem;
+}
+
+section div span h2 {
+  font-size: 1.5rem;
+}
+
+section .MenuCover1 {
+  font-family: 'Kalam';
+  background-color: #FFECB3;
+  color: #6D4C41;
+}
+
+section .MenuCover1 span {
+  top: 100px;
+}
+
+section .MenuCover1 img {
+  width: 40px;
+}
+
+@media screen and (orientation: portrait) {
+  section .MenuCover1 img {
+    width: 80px;
+  }
+}
+
+section .MenuCover2 {
+  color: #C67412;
+  background-color: #FFF5FE;
+  font-family: 'Volkhov';
+}
+
+section .MenuCover3 {
+  color: #0887FB;
+  background-color: #EFEBE9;
+  font-family: 'Leckerli One';
+}
+
+section .MenuCover4 {
+  color: #72BF56;
+  background-color: #FDFFFD;
+  font-family: 'Gochi Hand';
+}
+
+footer {
+  width: 1000px;
+  background-color: #579C87;
+  color: #FDCB46;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  bottom: 0%;
+}
+
+footer div {
+  padding: 10px;
+}
+
+footer div:hover {
+  animation: wiggle 1s infinite;
+}
+
+footer div a {
+  text-decoration: unset;
+  color: #FDCB46;
+}
+
+@keyframes wiggle {
+  0% {
+    transform: rotate(0deg);
+  }
+  80% {
+    transform: rotate(0deg);
+  }
+  85% {
+    transform: rotate(5deg);
+  }
+  95% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+aside {
+  background-color: #579C87;
+  color: #FDCB46;
+  padding-top: 10px;
+  text-align: center;
+  width: 500px;
+  margin: auto;
+  font-size: 30px;
+  border-radius: 8px;
+  margin-top: 50px;
+  margin-bottom: 200px;
+}
+
+@media screen and (orientation: portrait) {
+  aside {
+    width: 700px;
+  }
+}
+
+aside span {
+  height: 100%;
+  display: inline-block;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  height: 40px;
+}
+
+@media screen and (orientation: portrait) {
+  aside span {
+    height: 100px;
+    font-size: 1.5rem;
+  }
+}
+
+aside .container {
+  width: 250px;
+  text-align: left;
+}
+
+aside .typewriter {
+  width: 0px;
+  white-space: nowrap;
+  letter-spacing: .15em;
+  /* Adjust as needed */
+  animation: typing 3.5s steps(100, end) infinite;
+}
+
+.DisplayMenu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 100px;
+}
+
+.DisplayMenu div {
+  width: 90%;
+  padding-bottom: 80px;
+  text-align: center;
+}
+
+.DisplayMenu div h1 {
+  font-size: 3.0rem;
+}
+
+.DisplayMenu div h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0px;
+}
+
+.DisplayMenu div h2 img {
+  width: 250px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.DisplayMenu div h2 span {
+  width: 209px;
+  display: inline-block;
+}
+
+.DisplayMenu div h2 span:hover:after {
+  width: 100%;
+  visibility: visible;
+}
+
+.DisplayMenu div h2 span::after {
+  content: '';
+  background-color: #6D4C41;
+  visibility: hidden;
+  width: 0;
+  height: 3px;
+  transition: 1s;
+  display: block;
+}
+
+.DisplayMenu div p {
+  margin: auto;
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
+
+.DisplayMenu div p span {
+  text-align: left;
+  display: inline-block;
+}
+
+@media screen and (orientation: portrait) {
+  .DisplayMenu div p {
+    position: relative;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (orientation: portrait) {
+  .DisplayMenu .Price {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+
+@media screen and (orientation: portrait) {
+  .DisplayMenu .MenuLine {
+    width: 80%;
+  }
+}
+
+.DisplayMenu1 div {
+  font-family: 'Kalam';
+  background-color: #FFECB3;
+  color: #6D4C41;
+}
+
+.DisplayMenu1 div h2 img {
+  width: 250px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.DisplayMenu1 div img {
+  margin-top: 30px;
+  width: 130px;
+}
+
+.DisplayMenu1 .LogoFooter {
+  margin-top: 60px;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.DisplayMenu1 .LogoFooter img {
+  margin-right: 10px;
+  width: 25px;
+}
+
+@media screen and (orientation: portrait) {
+  .DisplayMenu1 .LogoFooter img {
+    width: 70px;
+    margin-right: 20px;
+  }
+}
+
+.DisplayMenu2 div {
+  background-color: #FFF5FE;
+  font-family: 'Volkhov';
+}
+
+.DisplayMenu2 div h1 {
+  font-size: 2rem;
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+
+.DisplayMenu2 div div {
+  width: 100%;
+}
+
+.DisplayMenu2 div div h2 {
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 42px;
+}
+
+@media screen and (orientation: portrait) {
+  .DisplayMenu2 div div h2 {
+    font-size: 1rem;
+  }
+}
+
+.DisplayMenu2 div div h2 span {
+  width: unset;
+}
+
+.DisplayMenu2 div div h2 img {
+  width: 250px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.DisplayMenu2 div div p {
+  width: 70%;
+  font-size: 0.9rem;
+}
+
+.DisplayMenu2 div .Rub1 {
+  color: #C67412;
+}
+
+.DisplayMenu2 div .Rub1 span::after {
+  background-color: #C67412;
+}
+
+.DisplayMenu2 div .Rub2 {
+  color: #A56799;
+}
+
+.DisplayMenu2 div .Rub2 span::after {
+  background-color: #A56799;
+}
+
+.DisplayMenu2 div .Rub3 {
+  color: #6E4CCC;
+}
+
+.DisplayMenu2 div .Rub3 span::after {
+  background-color: #6E4CCC;
+}
+
+.DisplayMenu3 div {
+  color: black;
+  background-color: #EFEBE9;
+  font-family: 'Leckerli One';
+}
+
+.DisplayMenu3 div div {
+  width: 100%;
+}
+
+.DisplayMenu3 div div h2 {
+  font-size: 1.3rem;
+  width: 100%;
+  font-weight: normal;
+  margin-bottom: 40px;
+}
+
+@media screen and (orientation: portrait) {
+  .DisplayMenu3 div div h2 {
+    font-size: 1.2rem;
+  }
+}
+
+.DisplayMenu3 div div h2 img {
+  width: 250px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+@media screen and (orientation: portrait) {
+  .DisplayMenu3 div div h2 img {
+    width: 230px;
+  }
+}
+
+.DisplayMenu3 div div h2 span::after {
+  background-color: black;
+}
+
+.DisplayMenu3 div div p {
+  width: 70%;
+}
+
+@media screen and (orientation: portrait) {
+  .DisplayMenu3 div div p {
+    font-size: 1rem;
+    width: 90%;
+  }
+}
+
+.DisplayMenu3 div div img {
+  margin-top: 30px;
+  width: 130px;
+}
+
+.DisplayMenu4 div {
+  color: black;
+  background-color: #EFEBE9;
+  font-family: 'Leckerli One';
+}
+
+.DisplayMenu4 div div {
+  width: 100%;
+}
+
+.DisplayMenu4 div div h2 {
+  font-size: 1.3rem;
+  width: 100%;
+  font-weight: normal;
+  margin-bottom: 40px;
+}
+
+.DisplayMenu4 div div h2 img {
+  width: 250px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+@media screen and (orientation: portrait) {
+  .DisplayMenu4 div div h2 img {
+    width: 200px;
+  }
+}
+
+.DisplayMenu4 div div h2 span::after {
+  background-color: black;
+}
+
+.DisplayMenu4 div div p {
+  width: 70%;
+  font-size: 1rem;
+}
+
+.DisplayMenu4 div div img {
+  margin-top: 30px;
+  width: 130px;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 250px;
+  }
+}
+
+.Gradient2 {
+  background: -webkit-linear-gradient(0deg, #cc6410 0% 30%, #a45be9, blue);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.Gradient3 {
+  background: -webkit-linear-gradient(0deg, #023BE3, #00FFFF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.Gradient4 {
+  background: -webkit-linear-gradient(0deg, #3E923A, white);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.MentionsLegales {
+  width: 80%;
+  margin: auto;
+}
+/*# sourceMappingURL=index.css.map */

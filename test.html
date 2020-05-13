@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="fr" xml:lang="fr" xmlns="http://www.w3.org/1999/xhtml">
+
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/index.css">
+    <title>OhMyFood</title>
+    <style>
+        .ribbon {
+            background-color: #5BC8F7;
+            display:inline-block;
+        }
+        .ribbon:hover:after{
+                
+                width:100%;
+                content:"";
+                visibility:visible;
+        }
+        .ribbon::after {
+            content:'';
+            border:1px solid red;
+            visibility:hidden;
+            width:0;
+            transition:1s;
+            display:block;
+        }
+    </style>
+</head>
+
+<body>
+    <span class="ribbon">Observez où est placée la boite orange.</span>
+</body>
+
+</html>
